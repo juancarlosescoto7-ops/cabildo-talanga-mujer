@@ -1,0 +1,44 @@
+-	Actividad: Entrega de Kits Escolares
+o	Descripción: En esta actividad, aunque no corresponde netamente a Oficina de la Mujer, esta dependencia apoyó en la gestión, control, documentación y logística para llevar a cabo dicha actividad.
+o	Beneficiados: +5000 estudiantes.
+o	Eje: Educación
+-	Actividad: Celebración de día de las madres
+o	Descripción: En esta actividad, aunque no corresponde al presupuesto de apoyo a la mujer netamente, esta dependencia apoyó en la gestión, control, documentación y logística para llevar a cabo dicha actividad.
+o	Beneficiados: +500 beneficiados con premios. 
+o	Eje: Participación Ciudadana. 
+-	Actividad: Charla sobre autoestima y amor propio; charla de empoderamiento; charlas sobre violencia de género; charla sobre violencia intrafamiliar; charla sobre participación; charla sobre logros. 
+o	Participantes: 40, 80, 40, 50, 40 y 40; respectivamente. 
+-	Actividad: Realización de citologías.
+o	Descripción: Se reúne una cantidad de mujeres a las que se les apoya con transporte, alimentación y realización de citología.
+o	Beneficiadas: 105
+o	Eje: Salud
+-	Actividad: Contratación de mujeres para trabajos relacionados con mantenimiento de áreas verdes de municipalidad. 
+o	Beneficiados: 5
+o	Eje: Ambiente
+-	Actividad: Becas Escolares
+o	Descripción: Se realiza la entrega de un bono económico mediante un proceso de selección y documentación previo a estudiantes con alto índice académico como apoyo a la educación y economía de las familias administradas por mujeres principalmente. 
+o	Beneficiados: 38
+o	Eje: Educación
+-	Entregas de sillas de rueda
+o	Apoyo con entrega de sillas de rueda a mujeres con problemas de salud. 
+o	Beneficiadas: 2
+o	Eje: Salud
+-	Taller para elaboración de productos (encurtidos, piñatas, flores):
+o	Se les capacita a mujeres mediante talleres para la elaboración de diversos productos para que puedan venderlos y llevar ingresos a sus familias. 
+o	Beneficiadas: +150
+o	Eje: Economía
+-	Donaciones en especie (en productos) para emprendimientos.
+o	Beneficiadas: +50
+o	Eje: Económico
+-	Apoyo en alimentación a familias de escasos recursos
+o	Beneficiadas: +50
+o	Eje: Economía
+-	Capacitaciones para gestión y administración de negocios
+o	 Beneficiadas: 30
+o	Eje: Economía
+-	Apoyo en emprendimiento mediante especie para elaboración de tortillas
+o	Beneficiadas: 22
+o	Eje: Economía
+-	Realización de esterilización
+o	Descripción: Se reúne un grupo de mujeres y se les realiza un acompañamiento, transporte y alimentación, y los costos para dicha esterilización. 
+o	Beneficiadas: 11

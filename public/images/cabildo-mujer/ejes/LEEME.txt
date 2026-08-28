@@ -1,0 +1,38 @@
+FOTOGRAFÍAS REALES PARA LOS CARRUSELES POR EJE
+
+Carpetas disponibles:
+
+- economia
+- prevencion-violencia
+- salud
+- participacion
+- educacion
+- ambiente
+
+Convención recomendada:
+
+01.webp
+02.webp
+03.webp
+04.webp
+05.webp
+
+Puede utilizar JPG, PNG o WebP, pero es preferible mantener un solo formato
+dentro de cada carpeta. WebP ofrece buena calidad con menor peso.
+
+Recomendaciones:
+
+- Entre 4 y 8 fotografías por eje.
+- Formato horizontal, preferiblemente 3:2 o 16:10.
+- Resolución recomendada: 1600 x 1000 píxeles o superior.
+- Evitar texto incrustado, marcas de agua y fotografías verticales muy cerradas.
+- Mantener el sujeto principal cerca del centro para permitir el recorte adaptable.
+- No repetir la misma fotografía en distintos ejes.
+
+Cuando las imágenes reales sean colocadas, sus rutas deben registrarse en:
+
+data/oficina-mujer-report.ts
+
+Ejemplo de ruta pública:
+
+/images/cabildo-mujer/ejes/economia/01.webp

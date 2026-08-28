@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="soft-flow" x="-35%" y="-45%" width="170%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="92" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#c36ca4" />
+  <g filter="url(#soft-flow)">
+    <path
+      d="M-220 90C90-150 430-90 615 110C790 300 690 500 430 560C170 620-95 500-260 340Z"
+      fill="#ffd8d0"
+    />
+    <path
+      d="M360 980C245 730 430 520 735 515C1010 510 1100 690 1015 920C950 1090 615 1130 360 980Z"
+      fill="#8f3a7c"
+    />
+    <path
+      d="M760-155C1020-285 1395-130 1510 115C1625 360 1460 520 1205 475C955 430 790 190 760-155Z"
+      fill="#e7a0d0"
+    />
+    <path
+      d="M990 345C1205 245 1545 310 1740 555C1865 710 1730 975 1435 1010C1140 1045 915 845 900 625C890 500 920 395 990 345Z"
+      fill="#ffa99a"
+    />
+    <path
+      d="M185 290C390 185 690 255 815 440C930 610 815 755 615 735C385 715 155 565 95 425C65 355 95 335 185 290Z"
+      fill="#d986bd"
+      opacity="0.84"
+    />
+  </g>
+</svg>
