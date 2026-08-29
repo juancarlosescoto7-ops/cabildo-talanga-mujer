@@ -6,6 +6,10 @@ import { CountUpText } from "./CountUpText";
 
 export function EjeActividadesSlide({ activeAxis }: { activeAxis: number }) {
   const axis = officeWomanReport.axes[activeAxis];
+  const actionCount = axis.activities.length;
+  const documentedActionsLabel = actionCount === 1
+    ? "ACCIÓN DOCUMENTADA"
+    : "ACCIONES DOCUMENTADAS";
 
   return (
     <section className="information-slide axis-activities-slide" aria-labelledby="axis-activities-title">
@@ -23,7 +27,7 @@ export function EjeActividadesSlide({ activeAxis }: { activeAxis: number }) {
 
       <div className="axis-activities-layout">
         <header className="axis-activities-header">
-          <p className="information-kicker"><CountUpText value={axis.activities.length} /> ACCIONES DOCUMENTADAS · EJE {activeAxis + 1}</p>
+          <p className="information-kicker"><CountUpText value={actionCount} /> {documentedActionsLabel} · EJE {activeAxis + 1}</p>
           <div className="axis-activities-title-row">
             <div className="axis-activities-reach">
               <strong style={{ color: axis.color }}><CountUpText value={axis.beneficiaries} /></strong>
@@ -34,7 +38,7 @@ export function EjeActividadesSlide({ activeAxis }: { activeAxis: number }) {
           </div>
         </header>
 
-        <div className={`axis-activities-grid axis-activities-grid--${Math.min(axis.activities.length, 3)}-columns`}>
+        <div className={`axis-activities-grid axis-activities-grid--${Math.min(actionCount, 3)}-columns axis-activities-grid--${actionCount}-items`}>
           {axis.activities.map((activity, index) => (
             <article className="axis-activity-card" key={activity.title}>
               <div className="axis-activity-card-heading">

@@ -39,11 +39,12 @@ export function AxisPhotoCarousel({ photos, color }: { photos: Readonly<AxisRepo
   const indicatorStart = Math.max(0, Math.min(position - Math.floor(indicatorCount / 2), photoOrder.length - indicatorCount));
   const visibleIndicators = photoOrder.slice(indicatorStart, indicatorStart + indicatorCount);
 
-  const commitPosition = useCallback((nextOrder: number[], nextPosition: number) => {
+  const commitPosition = useCallback((nextOrder: number[], nextPosition: number, withSound = true) => {
     orderRef.current = nextOrder;
     positionRef.current = nextPosition;
     setPhotoOrder(nextOrder);
     setPosition(nextPosition);
+    if (withSound) window.dispatchEvent(new Event("cabildo:carousel-change"));
   }, []);
 
   const move = useCallback((direction: number) => {
@@ -62,7 +63,7 @@ export function AxisPhotoCarousel({ photos, color }: { photos: Readonly<AxisRepo
 
   useEffect(() => {
     const initialOrder = shuffleIndices(photos.length);
-    commitPosition(initialOrder, 0);
+    commitPosition(initialOrder, 0, false);
   }, [commitPosition, photos]);
 
   useEffect(() => {

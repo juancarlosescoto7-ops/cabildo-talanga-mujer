@@ -12,7 +12,7 @@ export function EjeFinancieroSlide({ activeAxis }: { activeAxis: number }) {
   const axis = officeWomanReport.axes[activeAxis];
   const liveData = useFinancialData();
   const liveAmounts = liveData?.axes[financialAxisSlugByIndex[activeAxis]];
-  const amounts = liveAmounts ?? axis;
+  const amounts = liveAmounts?.budget ? liveAmounts : axis;
   const executionRate = amounts.budget
     ? amounts.executed / amounts.budget * 100
     : null;

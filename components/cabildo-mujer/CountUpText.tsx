@@ -54,12 +54,18 @@ export function CountUpText({ value, duration = 1100, delay = 180 }: CountUpText
     }
 
     let animationFrame = 0;
+    let lastSoundAt = 0;
     const startsAt = performance.now() + delay;
 
     const tick = (now: number) => {
       const linearProgress = Math.min(1, Math.max(0, (now - startsAt) / duration));
       const easedProgress = 1 - (1 - linearProgress) ** 3;
       setDisplayText(formatAtProgress(finalText, easedProgress));
+
+      if (linearProgress > 0 && now - lastSoundAt > 115) {
+        window.dispatchEvent(new Event("cabildo:count-tick"));
+        lastSoundAt = now;
+      }
 
       if (linearProgress < 1) animationFrame = requestAnimationFrame(tick);
     };

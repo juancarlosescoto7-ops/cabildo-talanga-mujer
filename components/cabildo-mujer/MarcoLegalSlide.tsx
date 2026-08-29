@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect } from "react";
 import { CountUpText } from "./CountUpText";
 
 type MarcoLegalSlideProps = {
@@ -8,6 +11,15 @@ type MarcoLegalSlideProps = {
 export function MarcoLegalSlide({
   sharedChartEntry = false,
 }: MarcoLegalSlideProps) {
+  useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const delay = reducedMotion ? 0 : sharedChartEntry ? 3550 : 3350;
+    const timer = window.setTimeout(() => {
+      window.dispatchEvent(new Event("cabildo:chart-split"));
+    }, delay);
+    return () => window.clearTimeout(timer);
+  }, [sharedChartEntry]);
+
   const slideClasses = [
     "information-slide legal-slide",
     sharedChartEntry ? "legal-slide--shared-chart" : "",

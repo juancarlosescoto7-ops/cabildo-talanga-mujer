@@ -19,6 +19,9 @@ export function SituacionFinancieraSlide() {
   const executionRate = percentage(totals.executed);
   const committedRate = percentage(totals.committed);
   const availableRate = percentage(available);
+  const plottedExecutionRate = Math.min(100, Math.max(0, executionRate));
+  const plottedCommittedRate = Math.min(100 - plottedExecutionRate, Math.max(0, committedRate));
+  const plottedAvailableRate = Math.max(0, 100 - plottedExecutionRate - plottedCommittedRate);
 
   return (
     <section className="information-slide financial-slide" aria-labelledby="financial-title">
@@ -68,12 +71,13 @@ export function SituacionFinancieraSlide() {
               <span>Composición del fondo financiero</span>
               <p>Así se distribuye el 5 % entre lo ejecutado, lo comprometido y el saldo proyectado.</p>
             </div>
-            <strong><CountUpText value={`${executionRate.toFixed(2)} %`} /></strong>
+            <strong><small>Ejecución</small><CountUpText value={`${executionRate.toFixed(2)} %`} /></strong>
           </div>
           <div className="financial-progress-track" role="img" aria-label={`${executionRate.toFixed(2)} por ciento ejecutado, ${committedRate.toFixed(2)} por ciento comprometido y ${availableRate.toFixed(2)} por ciento disponible`}>
-            <span className="financial-progress-segment financial-progress-segment--executed" style={{ width: `${Math.max(0, executionRate)}%` }} />
-            <span className="financial-progress-segment financial-progress-segment--committed" style={{ width: `${Math.max(0, committedRate)}%` }} />
-            <span className="financial-progress-segment financial-progress-segment--available" style={{ width: `${Math.max(0, availableRate)}%` }} />
+            <span className="financial-progress-segment financial-progress-segment--executed" style={{ width: `${plottedExecutionRate}%` }} />
+            <span className="financial-progress-segment financial-progress-segment--committed" style={{ width: `${plottedCommittedRate}%` }} />
+            <span className="financial-progress-segment financial-progress-segment--available" style={{ width: `${plottedAvailableRate}%` }} />
+            <span className="financial-progress-marker" style={{ left: `${plottedExecutionRate}%` }} aria-hidden="true" />
           </div>
           <div className="financial-progress-values">
             <p><span>Ejecutado</span><strong><CountUpText value={`${executionRate.toFixed(2)} %`} /></strong></p>
