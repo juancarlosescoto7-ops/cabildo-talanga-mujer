@@ -1170,6 +1170,7 @@ a {
 .axis-testimony-live span { width:.52rem; aspect-ratio:1; border-radius:50%; background:var(--representative-color); box-shadow:0 0 1rem var(--representative-color); animation:axis-testimony-live 1.45s ease-in-out infinite; }
 .axis-testimony-identity h1 { margin:.55rem 0 0; color:#fff4f0; font:620 clamp(2rem,3.2vw,3.8rem)/.98 "Fraunces Variable",Georgia,serif; letter-spacing:-.05em; text-wrap:balance; text-shadow:0 0 1.8rem color-mix(in srgb,var(--representative-color) 20%,transparent); }
 .axis-testimony-name { display:block; }
+.axis-testimony-stage--4-voices .axis-testimony-identity h1 { font-size:clamp(1.7rem,2.55vw,3.05rem); line-height:.93; }
 .axis-testimony-identity>span { display:block; margin-top:.55rem; color:rgba(239,199,218,.78); font:580 clamp(.66rem,.75vw,.84rem)/1.3 "Manrope Variable",Arial,sans-serif; }
 .axis-testimony-prompt { min-width:0; padding-top:clamp(.75rem,1.1vw,1.05rem); border-top:1px solid color-mix(in srgb,var(--representative-color) 38%,transparent); }
 .axis-testimony-prompt strong { display:block; color:var(--representative-color); font:720 clamp(.58rem,.68vw,.76rem)/1 "Archivo Variable",Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }

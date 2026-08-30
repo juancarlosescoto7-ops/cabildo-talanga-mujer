@@ -14,7 +14,7 @@ export type AxisReport = {
   committed: number;
   beneficiaries: string;
   representative: {
-    label: "Beneficiaria" | "Beneficiarias" | "Representante";
+    label: "Beneficiaria" | "Beneficiarias" | "Representante" | "Voces del eje";
     testimonyBackground: string;
     names: string[];
     role: string;
@@ -64,7 +64,7 @@ export const officeWomanReport = {
       representative: {
         label: "Beneficiarias",
         testimonyBackground: "/images/cabildo-mujer/testimonios/fondos/economia-ericka-jaqueline-v2.png",
-        names: ["Marlen Judith Romero", "Santos Bienvenida Bonilla", "Ericka Jaqueline"],
+        names: ["Marlen Judith Romero", "Santos Bienvenida Bonilla", "Ericka Jaqueline", "Marilyn Noemi Cruz Arguijo"],
         role: "Emprendimientos que se convierten en ingresos",
         story: "El apoyo municipal fortaleció sus iniciativas para la venta de tortillas de maíz y la elaboración de flores y piñatas.",
       },
@@ -146,7 +146,13 @@ export const officeWomanReport = {
       activitySummary: "Gestión y logística para entregar más de 5,000 kits escolares, junto con 38 becas mediante selección y documentación previa.",
       budget: 111294.57, executed: 33582.36, committed: 16007.09,
       beneficiaries: "+5,038",
-      representative: null,
+      representative: {
+        label: "Voces del eje",
+        testimonyBackground: "/images/cabildo-mujer/testimonios/fondos/educacion-karen-davila-sheila-cruz-v3.png",
+        names: ["Karen Dávila", "Sheila Cruz"],
+        role: "Educación que abre oportunidades",
+        story: "Compartirán su experiencia sobre el valor del acompañamiento educativo y las oportunidades que abre para las familias.",
+      },
       activities: [
         { title: "Entrega de kits escolares", description: "Gestión y logística para llevar útiles a estudiantes de todo el municipio.", reach: "+5,000 estudiantes" },
         { title: "Becas escolares", description: "Bonos para estudiantes de alto rendimiento, priorizando hogares administrados por mujeres.", reach: "38 estudiantes" },

@@ -29,7 +29,7 @@ export function EjeTestimonioSlide({ activeAxis }: { activeAxis: number }) {
 
       <div className="axis-testimony-layout">
         <p className="information-kicker">LA VOZ DEL EJE · {axis.name}</p>
-        <article className="axis-testimony-stage" style={{ "--representative-color": axis.color } as CSSProperties}>
+        <article className={`axis-testimony-stage axis-testimony-stage--${representative.names.length}-voices`} style={{ "--representative-color": axis.color } as CSSProperties}>
           <div className="axis-testimony-seal" aria-hidden="true">{representativeMark}</div>
           <div className="axis-testimony-identity">
             <p className="axis-testimony-live"><span aria-hidden="true" /> Momento de testimonio</p>
